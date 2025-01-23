@@ -5,8 +5,8 @@ from PIL import Image
 import pytesseract
 import os
 
-# Configure Tesseract path if needed
-# pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"  # Adjust for your system
+# Configure tesseract path if needed
+# pytesseract.pytesseract.tesseract_cmd = "/usr/bin/tesseract"  
 @csrf_exempt
 def extract_prescription(request):
     if request.method == "POST" and request.FILES.get("image"):
